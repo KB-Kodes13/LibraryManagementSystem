@@ -1,2 +1,6 @@
-package PACKAGE_NAME;public class LibraryOperations {
+public interface LibraryOperations<T extends LibraryItem> {
+
+    void addItem(T item);
+    void removeItem(T item);
+    void displayItem();
 }
